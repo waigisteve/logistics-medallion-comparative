@@ -9,6 +9,8 @@ This repository is the comparative entry point for the logistics medallion bluep
 - `docs/03_guardrails.md`: delivery, security, and data quality controls
 - `docs/04_delivery_roadmap.md`: staged execution plan
 - `docs/05_tooling_matrix.md`: tool-by-tool comparison across routes
+- `docs/06_architecture_workflows.md`: route workflow view
+- `docs/07_integrity_security_controls.md`: deletion, duplication, and intrusion controls
 
 ## Route Repositories
 
