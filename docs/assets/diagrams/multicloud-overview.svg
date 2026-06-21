@@ -38,9 +38,9 @@
 
   <rect x="40" y="520" width="720" height="360" class="panel"/>
   <text x="60" y="550" class="subtitle">GCP</text>
-  <rect x="70" y="610" width="120" height="90" class="node"/><image href="../icons/gcp/googlecloud.svg" x="85" y="628" width="30" height="30"/><text x="123" y="648" class="label">Pub/Sub</text>
+  <rect x="70" y="610" width="120" height="90" class="node"/><image href="../icons/gcp/pubsub.svg" x="85" y="628" width="30" height="30"/><text x="123" y="648" class="label">Pub/Sub</text>
   <rect x="220" y="610" width="120" height="90" class="node"/><image href="../icons/gcp/cloud-storage.svg" x="235" y="628" width="30" height="30"/><text x="273" y="648" class="label">Bronze</text>
-  <rect x="370" y="610" width="120" height="90" class="node"/><image href="../icons/gcp/googlecloud.svg" x="385" y="628" width="30" height="30"/><text x="423" y="648" class="label">Dataflow</text>
+  <rect x="370" y="610" width="120" height="90" class="node"/><image href="../icons/gcp/dataflow.svg" x="385" y="628" width="30" height="30"/><text x="423" y="648" class="label">Dataflow</text>
   <rect x="520" y="610" width="120" height="90" class="node"/><image href="../icons/gcp/cloud-storage.svg" x="535" y="628" width="30" height="30"/><text x="573" y="648" class="label">Silver</text>
   <rect x="650" y="610" width="90" height="90" class="node"/><image href="../icons/gcp/bigquery.svg" x="663" y="628" width="30" height="30"/><text x="701" y="648" class="label">BQ</text>
   <path d="M190 655 H220" class="connector"/><path d="M340 655 H370" class="connector"/><path d="M490 655 H520" class="connector"/><path d="M640 655 H650" class="connector"/>
