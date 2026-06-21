@@ -1,27 +1,18 @@
 # Architecture Workflows
 
-This document adds route workflow views across the four target implementations.
+![Multicloud overview](assets/diagrams/multicloud-overview.svg)
 
-## AWS Workflow
+Each route uses the same architectural shape:
 
-`Kinesis Data Streams -> Amazon S3 bronze -> AWS Glue Streaming or Flink -> S3 silver/gold -> Snowflake`
+- replayable ingestion
+- immutable bronze
+- deduplicating and validating processing
+- curated silver and gold
+- controlled serving
 
-## Azure Workflow
+What changes is the platform-native implementation:
 
-`Event Hubs -> ADLS Gen2 bronze -> Stream Analytics or Databricks -> ADLS silver/gold -> Snowflake`
-
-## GCP Workflow
-
-`Pub/Sub -> Cloud Storage bronze -> Dataflow -> Cloud Storage silver -> BigQuery`
-
-Optional serving path:
-
-`Pub/Sub -> Cloud Storage bronze -> Dataflow -> Cloud Storage silver -> Snowflake`
-
-## Hybrid Workflow
-
-`Kafka -> MinIO bronze -> Spark or Flink -> MinIO/Iceberg silver-gold -> Trino`
-
-Optional serving path:
-
-`Kafka -> MinIO bronze -> Spark or Flink -> MinIO/Iceberg silver-gold -> Snowflake`
+- AWS: `Kinesis -> S3 -> Glue/Flink -> S3 -> Snowflake`
+- Azure: `Event Hubs -> ADLS -> Stream Analytics/Databricks -> ADLS -> Snowflake`
+- GCP: `Pub/Sub -> Cloud Storage -> Dataflow -> Cloud Storage -> BigQuery`
+- Hybrid: `Kafka -> MinIO -> Spark/Flink -> MinIO/Iceberg -> Trino`
